@@ -48,7 +48,7 @@ const Sidebar = () => {
         {/* TOP LOGO */}
         <div className="z-50 flex min-h-[56px] items-center justify-between bg-white px-6 pt-3 dark:bg-black">
           <div className="text-xl font-bold text-gray-800 dark:text-white">
-            MEH
+            DEV
           </div>
 
           {isSidebarCollapsed ? null : (
@@ -70,11 +70,11 @@ const Sidebar = () => {
           <Image src="/logo.png" alt="Logo" width={40} height={40} />
           <div>
             <h3 className="text-md font-bold tracking-wide dark:text-gray-200">
-              NEMAT TEAM
+              DEV TEAM
             </h3>
             <div className="mt-1 flex items-start gap-2">
               <LockIcon className="mt-[0.1rem] h-3 w-3 text-gray-500 dark:text-gray-400" />
-              <p className="text-xs text-gray-500">Private</p>
+              <p className="text-xs text-gray-400">Private</p>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@ const Sidebar = () => {
         {/* PROJECTS LINKS */}
         <button 
           onClick={() => setShowProjects((prev) => !prev)}
-          className="flex w-full items-center justify-between px-8 py-3 text-gray-500">
+          className="flex w-full items-center justify-between px-8 py-3 text-gray-400">
           <span className="">Projects</span>
           {showProjects ? (
             <ChevronUp className="h-5 w-5" />
@@ -114,7 +114,7 @@ const Sidebar = () => {
         {/* PRIORITIES LINKS */}
         <button 
           onClick={() => setShowPriority((prev) => !prev)}
-          className="flex w-full items-center justify-between px-8 py-3 text-gray-500">
+          className="flex w-full items-center justify-between px-8 py-3 text-gray-400">
           <span className="">Priority</span>
           {showPriority ? (
             <ChevronUp className="h-5 w-5" />

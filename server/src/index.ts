@@ -11,6 +11,7 @@ import taskRoutes from './routes/taskRoutes';
 import searchRoutes from './routes/searchRoutes';
 import userRoutes from './routes/userRoutes';
 import teamRoutes from "./routes/teamRoutes";
+import authRoutes from "./routes/authRoutes";
 
 /* CONFIGURATIONS */ 
 dotenv.config();
@@ -21,6 +22,7 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use(cors());
 
 /* ROUTES */
@@ -33,7 +35,7 @@ app.use("/tasks", taskRoutes);
 app.use("/search", searchRoutes);
 app.use("/users", userRoutes);
 app.use("/teams", teamRoutes);
-
+app.use("/auth", authRoutes);
 /* SERVER */ 
 const port = Number(process.env.PORT) || 3000;
 app.listen(port, "0.0.0.0", () => {
