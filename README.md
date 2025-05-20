@@ -259,3 +259,7 @@ project-management/
 - [PostgreSQL](https://www.postgresql.org/)
 - [JWT](https://jwt.io/)
 - [bcrypt](https://github.com/kelektiv/node.bcrypt.js)
+
+---
+
+**Happy coding!**
