@@ -1,6 +1,10 @@
-# Project Management App
+# Project Management Dashboard
 
-A full-stack project management application built with **Node.js**, **Express**, **Prisma**, **PostgreSQL**, and a modern **Next.js** frontend. This app allows teams to manage projects, tasks, users, and teams with secure JWT authentication.
+A full-stack project management dashboard built using Next.js, Node.js, Express, PostgreSQL, and Prisma. The application provides task tracking, team management, and interactive UI components designed for productivity and clarity.
+
+The frontend is built with Next.js, styled using Tailwind CSS, and enhanced with Material UI Data Grid for handling complex data views. Redux Toolkit and RTK Query are used for efficient state and data management.
+
+The backend is powered by Node.js and Express, with a PostgreSQL database accessed via Prisma ORM and monitored using PgAdmin. The API architecture is modular and scalable, designed to support task creation, user roles, project deadlines, and activity logging. This application allows teams to manage projects, tasks, users, and teams with secure JWT authentication.
 
 ---
 
@@ -91,7 +95,7 @@ A full-stack project management application built with **Node.js**, **Express**,
 ### 1. Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/project-management.git
+git clone https://github.com/NematSiddique/project-management.git
 cd project-management
 ```
 
@@ -239,12 +243,6 @@ project-management/
 3. Commit your changes (`git commit -am 'Add new feature'`)
 4. Push to the branch (`git push origin feature/your-feature`)
 5. Open a pull request
-
----
-
-## License
-
-MIT
 
 ---
 
